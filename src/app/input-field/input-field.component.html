@@ -1,0 +1,11 @@
+<div class="center-wrapper">
+<div class="inputs">
+    <label for="password">Enter Password:</label>
+    <input 
+    type="text" 
+    id="password"
+    [formControl]="passwordControl" 
+    (input)="onInputChange()">
+</div>
+<app-bars [strength]="pStr"></app-bars>
+</div>

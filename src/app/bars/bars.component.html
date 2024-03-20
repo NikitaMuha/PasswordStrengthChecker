@@ -1,0 +1,24 @@
+<div class="sections">
+    <div class="section" 
+    [ngClass]="{
+                'green': strength === 'strong',
+                'yellow': strength ==='medium',
+                'red': strength === 'weak' || strength === 'underValue',
+                'gray': strength === 'noValue'}">
+    </div>
+    
+    <div class="section" [ngClass]="{
+                'green': strength === 'strong',
+                'yellow': strength ==='medium',
+                'red': strength === 'underValue',
+                'gray': strength === 'noValue'
+                }">
+    </div>
+    
+    <div class="section" [ngClass]="{
+                'green': strength === 'strong',
+                'red': strength === 'underValue',
+                'gray': strength === 'noValue'}">
+    </div>
+    </div>
+
